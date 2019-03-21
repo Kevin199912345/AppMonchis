@@ -33,7 +33,7 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:contentDescription = "@string/des1"
+        android:contentDescription = "@string/des"
         android:layout_width="match_parent"
         android:layout_height="93dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,3 +75,4 @@
         android:textColor="#ffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
