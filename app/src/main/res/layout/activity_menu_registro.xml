@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MenuRegistro">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtCedula_Registro"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="38dp"
+        android:textColorHint="#ffff"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail_Registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cedula"
+            android:inputType="textPhonetic"
+            android:textColor="@android:color/background_light" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtEmail_Registro"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        android:textColorHint="#ffff"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsuario_Registro"
+        app:layout_constraintEnd_toEndOf="@+id/txtCedula_Registro"
+        app:layout_constraintStart_toStartOf="@+id/txtCedula_Registro"
+        app:layout_constraintTop_toBottomOf="@+id/txtCedula_Registro">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/background_light" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtUsuario_Registro"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        android:textColorHint="#ffff"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/txtContrasenia_Registro"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail_Registro"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail_Registro"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail_Registro">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:textColor="@android:color/background_light" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtContrasenia_Registro"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        android:textColorHint="#ffff"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/txtContrasenia_Registro2"
+        app:layout_constraintEnd_toEndOf="@+id/txtUsuario_Registro"
+        app:layout_constraintStart_toStartOf="@+id/txtUsuario_Registro"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario_Registro">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_light" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtContrasenia_Registro2"
+        android:layout_width="274dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        android:textColorHint="#ffff"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmar_Registro"
+        app:layout_constraintEnd_toEndOf="@+id/txtContrasenia_Registro"
+        app:layout_constraintStart_toStartOf="@+id/txtContrasenia_Registro"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasenia_Registro">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repita su contraseña"
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_light" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnConfirmar_Registro"
+        android:layout_width="278dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/boton_redondo"
+        android:text="Confirmar Registro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasenia_Registro2" />
+
+</android.support.constraint.ConstraintLayout>

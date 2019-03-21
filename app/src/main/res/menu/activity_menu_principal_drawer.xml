@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_reservar"
+            android:icon="@drawable/reservar"
+            android:title="Reservar" />
+        <item
+            android:id="@+id/nav_comidasRapidas"
+            android:icon="@drawable/comida"
+            android:title="Comidas rapidas" />
+        <item
+            android:id="@+id/nav_menuSemanal"
+            android:icon="@drawable/menu"
+            android:title="Menu semanal" />
+        <item
+            android:id="@+id/nav_Herramientas"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Herramientas" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_Buscar"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Buscar" />
+            <item
+                android:id="@+id/nav_Enviar"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Enviar" />
+        </menu>
+    </item>
+
+</menu>
