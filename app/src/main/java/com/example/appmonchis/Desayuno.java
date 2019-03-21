@@ -17,7 +17,7 @@ public class Desayuno extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         if(actionBar !=null){
             actionBar .setDisplayHomeAsUpEnabled(true);
-            actionBar.setTitle("Cena");
+            actionBar.setTitle("Desayunos");
         }
     }
 }

@@ -42,7 +42,7 @@ public class MenuPrincipalActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent intent = new Intent(MenuPrincipalActivity.this,Desayuno.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
@@ -51,7 +51,7 @@ public class MenuPrincipalActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent intent = new Intent(MenuPrincipalActivity.this,Almuerzo.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
@@ -60,7 +60,7 @@ public class MenuPrincipalActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent intent = new Intent(MenuPrincipalActivity.this,Cena.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
