@@ -25,13 +25,13 @@ public class Cena extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.rv_lidt);
         List<item> mlist = new ArrayList<>();
-        mlist.add(new item(R.drawable.burrito,"Almuerzo", R.drawable.splash,25));
-        mlist.add(new item(R.drawable.carnita,"Almuerzo", R.drawable.splash,12));
-        mlist.add(new item(R.drawable.comidita,"Almuerzo", R.drawable.splash,6));
-        mlist.add(new item(R.drawable.pastita,"Almuerzo", R.drawable.splash,9));
-        mlist.add(new item(R.drawable.pescadito,"Almuerzo", R.drawable.splash,18));
-        mlist.add(new item(R.drawable.hamburgesita,"Almuerzo", R.drawable.splash,22));
-        mlist.add(new item(R.drawable.hamburguesitax2,"Almuerzo", R.drawable.splash,13));
+        mlist.add(new item(R.drawable.burrito,"Cena", R.drawable.splash,25));
+        mlist.add(new item(R.drawable.carnita,"Cena", R.drawable.splash,12));
+        mlist.add(new item(R.drawable.comidita,"Cena", R.drawable.splash,6));
+        mlist.add(new item(R.drawable.pastita,"Cena", R.drawable.splash,9));
+        mlist.add(new item(R.drawable.pescadito,"Cena", R.drawable.splash,18));
+        mlist.add(new item(R.drawable.hamburgesita,"Cena", R.drawable.splash,22));
+        mlist.add(new item(R.drawable.hamburguesitax2,"Cena", R.drawable.splash,13));
         adapter Adapter = new adapter(this,mlist);
         recyclerView.setAdapter(Adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
