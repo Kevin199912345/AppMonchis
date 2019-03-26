@@ -9,19 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Cena" android:parentActivityName=".MenuPrincipalActivity"></activity>
-        <activity android:name=".Almuerzo" android:parentActivityName=".MenuPrincipalActivity"/>
-        <activity android:name=".Desayuno" android:parentActivityName=".MenuPrincipalActivity"/>
+        <activity android:name=".confirmar_activity"></activity>
         <activity
-            android:name=".MenuRegistro" android:parentActivityName=".Login"
+            android:name=".Cena"
+            android:parentActivityName=".MenuPrincipalActivity" />
+        <activity
+            android:name=".Almuerzo"
+            android:parentActivityName=".MenuPrincipalActivity" />
+        <activity
+            android:name=".Desayuno"
+            android:parentActivityName=".MenuPrincipalActivity" />
+        <activity
+            android:name=".MenuRegistro"
             android:label="Regristro"
+            android:parentActivityName=".Login"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuPrincipalActivity" />
         </activity>
         <activity
-
             android:name=".MenuPrincipalActivity"
             android:label="Monchis Time"
             android:theme="@style/AppTheme.NoActionBar" />
